@@ -1,0 +1,36 @@
+StatCode5,ShiptypeLevel2,ShiptypeLevel5,SCA Vessel Type
+A11A2TN,Tankers,LNG Tanker,LNG Ships
+A11A2TZ,Tankers,Combination Gas Tanker (LNG/LPG),LNG Ships
+A11B2TG,Tankers,LPG Tanker,Tankers
+A11B2TH,Tankers,LPG/Chemical Tanker,Tankers
+A12A2LP,Tankers,Molten Sulphur Tanker,Tankers
+A12A2TC,Tankers,Chemical Tanker,Tankers
+A12B2TR,Tankers,Chemical/Products Tanker,Tankers
+A13A2TS,Tankers,Shuttle Tanker,Tankers
+A13A2TV,Tankers,Crude Oil Tanker,Tankers
+A13A2TW,Tankers,Crude/Oil Products Tanker,Tankers
+A13B2TP,Tankers,Products Tanker,Tankers
+A13C2LA,Tankers,Asphalt/Bitumen Tanker,Tankers
+A21A2BC,Bulk Carriers,Bulk Carrier,Bulk Carrier
+A21B2BO,Bulk Carriers,Ore Carrier,Bulk Carrier
+A22A2BB,Bulk Carriers,Bulk/Oil Carrier (OBO),Bulk Carrier
+A22A2BN,Bulk Carriers,Bulk/Caustic Soda Carrier (CABU),Bulk Carrier
+A23A2BD,Bulk Carriers,"Bulk Carrier, Self-discharging",Bulk Carrier
+A24A2BT,Bulk Carriers,Cement Carrier,Bulk Carrier
+A24B2BW,Bulk Carriers,Wood Chips Carrier,Bulk Carrier
+A24D2BA,Bulk Carriers,Aggregates Carrier,Bulk Carrier
+A24G2BS,Bulk Carriers,Refined Sugar Carrier,Bulk Carrier
+A31A2GA,Dry Cargo/Passenger,General Cargo Ship (with Ro-Ro facility),RoRo
+A31A2GE,Dry Cargo/Passenger,"General Cargo Ship, Self-discharging",General Cargo
+A31A2GO,Dry Cargo/Passenger,Open Hatch Cargo Ship,General Cargo
+A31A2GX,Dry Cargo/Passenger,General Cargo Ship,General Cargo
+A33A2CC,Dry Cargo/Passenger,Container Ship (Fully Cellular),Container Ships
+A34A2GR,Dry Cargo/Passenger,Refrigerated Cargo Ship,General Cargo
+A35A2RR,Dry Cargo/Passenger,Ro-Ro Cargo Ship,RoRo
+A35B2RV,Dry Cargo/Passenger,Vehicles Carrier,Car Carrier
+A36A2PR,Dry Cargo/Passenger,Passenger/Ro-Ro Ship (Vehicles),RoRo
+A37A2PC,Dry Cargo/Passenger,Passenger/Cruise,Passenger Ship
+A37B2PS,Dry Cargo/Passenger,Passenger Ship,Passenger Ship
+A38A2GL,Dry Cargo/Passenger,Livestock Carrier,General Cargo
+A38C2GH,Dry Cargo/Passenger,Heavy Load Carrier,General Cargo
+A38C3GH,Dry Cargo/Passenger,"Heavy Load Carrier, semi submersible",General Cargo
