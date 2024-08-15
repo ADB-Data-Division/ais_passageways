@@ -29,8 +29,8 @@ A34A2GR,Dry Cargo/Passenger,Refrigerated Cargo Ship,General Cargo
 A35A2RR,Dry Cargo/Passenger,Ro-Ro Cargo Ship,RoRo
 A35B2RV,Dry Cargo/Passenger,Vehicles Carrier,Car Carrier
 A36A2PR,Dry Cargo/Passenger,Passenger/Ro-Ro Ship (Vehicles),RoRo
-A37A2PC,Dry Cargo/Passenger,Passenger/Cruise,Passenger Ship
-A37B2PS,Dry Cargo/Passenger,Passenger Ship,Passenger Ship
+A37A2PC,Dry Cargo/Passenger,Passenger/Cruise,Passenger Ships
+A37B2PS,Dry Cargo/Passenger,Passenger Ship,Passenger Ships
 A38A2GL,Dry Cargo/Passenger,Livestock Carrier,General Cargo
 A38C2GH,Dry Cargo/Passenger,Heavy Load Carrier,General Cargo
 A38C3GH,Dry Cargo/Passenger,"Heavy Load Carrier, semi submersible",General Cargo
