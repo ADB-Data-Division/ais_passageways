@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5759b941cfb8defc5ffbc6c6be1f2b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c5759b941cfb8defc5ffbc6c6be1f2b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c5759b941cfb8defc5ffbc6c6be1f2b1 = L.map(
+                "map_c5759b941cfb8defc5ffbc6c6be1f2b1",
+                {
+                    center: [42.54166666666666, -10.211666666666666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    name: "Base",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8362c439695f483e7bfd639849972e21 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_8362c439695f483e7bfd639849972e21.addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            var circle_marker_2edafe6ad2201342c14b5d3bfdc89f36 = L.circleMarker(
+                [-33.9095, 18.4356],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            var marker_9d6d2dd887a3cdc24e7234b58c933537 = L.marker(
+                [-33.9095, 18.4356],
+                {}
+            ).addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            var div_icon_527738b8d86e5b2b28c1655d67273352 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color:black\" \u003e\u003cb\u003eCape Town\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [50, 25], "iconSize": [150, 36]});
+            marker_9d6d2dd887a3cdc24e7234b58c933537.setIcon(div_icon_527738b8d86e5b2b28c1655d67273352);
+        
+    
+            var circle_marker_1fbe55ffac37ec3f9081a6e9b656200e = L.circleMarker(
+                [30.49474, 32.34467],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            var marker_df484b0fa5aa5060b8f71de16c37b4b4 = L.marker(
+                [30.49474, 32.34467],
+                {}
+            ).addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            var div_icon_21b06932630843a99aeca4a2930944ee = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color:black\" \u003e\u003cb\u003eSuez Canal\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [50, 25], "iconSize": [150, 36]});
+            marker_df484b0fa5aa5060b8f71de16c37b4b4.setIcon(div_icon_21b06932630843a99aeca4a2930944ee);
+        
+    
+            var feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_94651ba69eb8de3915411bab7cb902bc_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_94651ba69eb8de3915411bab7cb902bc_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_94651ba69eb8de3915411bab7cb902bc = L.geoJson(null, {
+                onEachFeature: geo_json_94651ba69eb8de3915411bab7cb902bc_onEachFeature,
+            
+                pointToLayer: geo_json_94651ba69eb8de3915411bab7cb902bc_pointToLayer,
+        });
+
+        function geo_json_94651ba69eb8de3915411bab7cb902bc_add (data) {
+            geo_json_94651ba69eb8de3915411bab7cb902bc
+                .addData(data);
+        }
+            geo_json_94651ba69eb8de3915411bab7cb902bc_add({"features": [{"geometry": {"coordinates": [6.0216666666666665, 37.84], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [5.406666666666666, 37.821666666666665], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [1.5466666666666666, 37.195], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.128333333333333, 36.15166666666666], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-9.998333333333331, 42.70166666666667], "type": "Point"}, "properties": {"Date": "2021-03-16", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.493333333333334, 45.245], "type": "Point"}, "properties": {"Date": "2021-03-17", "Destination": "[\u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.1083333333333334, 50.18666666666667], "type": "Point"}, "properties": {"Date": "2021-03-18", "Destination": "[\u0027BE ZEE\u003eGI GIB\u0027 \u0027EG PSD\u003eBE ZEE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.33772, 50.25184333333333], "type": "Point"}, "properties": {"Date": "2021-03-20", "Destination": "[\u0027BE ZEE\u003eGI GIB\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.606666666666667, 45.445], "type": "Point"}, "properties": {"Date": "2021-03-21", "Destination": "[\u0027BE ZEE\u003eGI GIB\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.211666666666666, 42.54166666666666], "type": "Point"}, "properties": {"Date": "2021-03-22", "Destination": "[\u0027BE ZEE\u003eGI GIB\u0027 \u0027GI GIB\u003eEG PSD\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.25567, 36.043795], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027GI GIB\u003eEG PSD\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [1.6733333333333331, 37.17666666666667], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027GI GIB\u003eEG PSD\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [5.036666666666667, 37.54833333333333], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027QATAR\u0027 \u0027GI GIB\u003eEG PSD\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [5.428333333333334, 37.82333333333333], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [1.528333333333333, 37.208333333333336], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.113333333333333, 36.153333333333336], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027QATAR\u0027 \u0027GIB OPL\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.028333333333333, 35.525], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.628333333333334, 30.366666666666667], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-16.489028333333334, 25.020868333333333], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.983333333333334, 17.351666666666667], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.998333333333335, 11.65], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.495555, 6.328918333333333], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.218333333333334, 3.3966666666666665], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.65, 2.618333333333333], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.343626666666666, -3.15414], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.706666666666667, -6.58], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-0.12, -12.648333333333332], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [3.968628333333333, -17.919288333333334], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027QATAR\u0027 \u0027Q\"$ARB JPFT$QP\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [7.508333333333334, -22.285], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [12.891666666666667, -28.75], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [18.376565, -34.81842], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [27.78, -33.63666666666666], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [32.27975, -29.77922], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [32.631433333333334, -29.380055], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [37.29333333333334, -22.89], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [42.446286666666666, -16.372315], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [48.58607833333333, -10.753831666666668], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [52.72166666666666, -5.198333333333333], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [53.986666666666665, -3.81], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [55.987305, -1.691505], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [59.22833333333333, 3.8333333333333335], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [62.111666666666665, 9.698333333333334], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [62.013938333333336, 16.200608333333335], "type": "Point"}, "properties": {"Date": "2021-04-21", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [60.64, 22.35833333333333], "type": "Point"}, "properties": {"Date": "2021-04-22", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [56.744886666666666, 26.06608333333333], "type": "Point"}, "properties": {"Date": "2021-04-22", "Destination": "[\u0027QATAR\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [52.89596, 26.28474333333333], "type": "Point"}, "properties": {"Date": "2021-04-23", "Destination": "[\u0027QATAR\u0027 \u0027SIN PWBGAB..\u0027 \u0027SIN PWBGA\u0027 \u0027QATARAGE\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [41.125675, 25.203076666666668], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027SIN PWBGA\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [51.61159, 25.932526666666668], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027CN NBG\u0027 \u0027SIN PWBGA\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [52.99366666666667, 26.235793333333334], "type": "Point"}, "properties": {"Date": "2021-04-27", "Destination": "[\u0027CN NBG\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [56.85333333333333, 25.995], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027CN NBG\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [60.87, 22.67333333333333], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027EAST CHINA SEA\u0027 \u0027CN NBG\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [66.67666666666666, 17.555], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027EAST CHINA SEA\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [71.85, 12.808333333333334], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027EAST CHINA SEA\u0027]", "IMO": "9431135", "Vessel": "AL NUAMAN", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_94651ba69eb8de3915411bab7cb902bc.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_94651ba69eb8de3915411bab7cb902bc.addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var poly_line_ea19790c8d2cf5f143620da0f3c4c8d1 = L.polyline(
+                [[37.84, 6.0216666666666665], [37.821666666666665, 5.406666666666666], [37.195, 1.5466666666666666], [36.15166666666666, -4.128333333333333], [42.70166666666667, -9.998333333333331], [45.245, -8.493333333333334], [50.18666666666667, -1.1083333333333334], [50.25184333333333, -1.33772], [45.445, -8.606666666666667], [42.54166666666666, -10.211666666666666], [36.043795, -4.25567], [37.17666666666667, 1.6733333333333331], [37.54833333333333, 5.036666666666667], [37.82333333333333, 5.428333333333334], [37.208333333333336, 1.528333333333333], [36.153333333333336, -4.113333333333333], [35.525, -7.028333333333333], [30.366666666666667, -13.628333333333334], [25.020868333333333, -16.489028333333334], [17.351666666666667, -17.983333333333334], [11.65, -17.998333333333335], [6.328918333333333, -14.495555], [3.3966666666666665, -12.218333333333334], [2.618333333333333, -11.65], [-3.15414, -7.343626666666666], [-6.58, -4.706666666666667], [-12.648333333333332, -0.12], [-17.919288333333334, 3.968628333333333], [-22.285, 7.508333333333334], [-28.75, 12.891666666666667], [-34.81842, 18.376565], [-33.63666666666666, 27.78], [-29.77922, 32.27975], [-29.380055, 32.631433333333334], [-22.89, 37.29333333333334], [-16.372315, 42.446286666666666], [-10.753831666666668, 48.58607833333333], [-5.198333333333333, 52.72166666666666], [-3.81, 53.986666666666665], [-1.691505, 55.987305], [3.8333333333333335, 59.22833333333333], [9.698333333333334, 62.111666666666665], [16.200608333333335, 62.013938333333336], [22.35833333333333, 60.64], [26.06608333333333, 56.744886666666666], [26.28474333333333, 52.89596], [25.203076666666668, 41.125675], [25.932526666666668, 51.61159], [26.235793333333334, 52.99366666666667], [25.995, 56.85333333333333], [22.67333333333333, 60.87], [17.555, 66.67666666666666], [12.808333333333334, 71.85]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_3e56a5151f14006063a5b5579026a764 = L.circleMarker(
+                [42.54166666666666, -10.211666666666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_534ff9956b009c0dc6b8fec28d0a996f = L.circleMarker(
+                [37.84, 6.0216666666666665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_8c371cf434a5a532f04d2950014485c4 = L.circleMarker(
+                [12.808333333333334, 71.85],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_02b3ef5e95db92c089296f1e10bd61db = L.circleMarker(
+                [42.54166666666666, -10.211666666666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_cd597d76bc6cb19e10c6d5a2c6452fda = L.circleMarker(
+                [36.043795, -4.25567],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_4eee167af85dd98ed16e9487abe3b234 = L.circleMarker(
+                [37.208333333333336, 1.528333333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var circle_marker_5c3de445fbc17b09696ecca921ea518c = L.circleMarker(
+                [30.366666666666667, -13.628333333333334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            var feature_group_979267f0761ceebebe9481de11e6bc4e = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_17bc04c61857d04c54511fde37a2c6b1_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_17bc04c61857d04c54511fde37a2c6b1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_17bc04c61857d04c54511fde37a2c6b1 = L.geoJson(null, {
+                onEachFeature: geo_json_17bc04c61857d04c54511fde37a2c6b1_onEachFeature,
+            
+                pointToLayer: geo_json_17bc04c61857d04c54511fde37a2c6b1_pointToLayer,
+        });
+
+        function geo_json_17bc04c61857d04c54511fde37a2c6b1_add (data) {
+            geo_json_17bc04c61857d04c54511fde37a2c6b1
+                .addData(data);
+        }
+            geo_json_17bc04c61857d04c54511fde37a2c6b1_add({"features": [{"geometry": {"coordinates": [23.42833333333333, 34.571666666666665], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [23.251666666666665, 34.62], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027EUROPEAZ\u0027 \u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [13.196666666666667, 36.635], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [5.461666666666667, 37.84333333333333], "type": "Point"}, "properties": {"Date": "2021-03-16", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [1.596666666666667, 37.193333333333335], "type": "Point"}, "properties": {"Date": "2021-03-16", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.134885, 36.147841666666665], "type": "Point"}, "properties": {"Date": "2021-03-17", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-9.96, 42.748333333333335], "type": "Point"}, "properties": {"Date": "2021-03-19", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.775, 45.96666666666667], "type": "Point"}, "properties": {"Date": "2021-03-19", "Destination": "[\u0027EUROPE\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.1044366666666665, 50.01109666666667], "type": "Point"}, "properties": {"Date": "2021-03-20", "Destination": "[\u0027EUROPE\u0027 \u0027GB MLF\u0027 \u0027GI GIB\u0027 \u0027GIBRALTAR\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.070111666666667, 50.003235], "type": "Point"}, "properties": {"Date": "2021-03-22", "Destination": "[\u0027GI GIB\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.851666666666667, 46.155], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027GI GIB\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.203333333333331, 42.54333333333334], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027EG PSD\u0027 \u0027GI GIB\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.241666666666666, 36.053333333333335], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.16, 36.12833333333333], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027QA RLF\u003e?? ???\u0027 \u0027EG PSD\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-6.985, 35.51166666666666], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027QA RLF\u003e?? ???\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.49, 30.02833333333333], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027QA RLF\u003e?? ???\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-16.8622, 25.075186666666667], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027QA RLF\u0027 \u0027QA RLF\u003e?? ???\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-19.508333333333333, 17.543333333333333], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.852606666666667, 10.682066666666667], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-15.607423333333331, 6.414455], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.192093333333334, 1.9001833333333331], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.629125, 4.152355], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.305, 0.7183333333333334], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.861118333333334, -3.885196666666667], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-5.082648333333333, -7.399901666666667], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-0.884655, -12.792646666666666], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [3.823333333333333, -18.57333333333333], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [6.379895, -21.69865], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [7.151983333333333, -22.62370333333333], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [12.55, -28.87], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [18.36, -34.94], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [27.73853833333333, -34.27235833333334], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [33.437686666666664, -30.031585], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [37.95333333333333, -23.201666666666668], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [42.355356666666665, -16.318925], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [46.94, -9.786666666666669], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [51.72166666666666, -3.986666666666667], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [55.80845166666667, 0.351075], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [56.70666666666666, 2.2116666666666664], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [58.68070333333333, 6.24421], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [59.58, 8.058333333333334], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [60.735, 11.623333333333331], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [61.20666666666666, 15.775], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [61.2, 16.548333333333332], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [61.255, 16.46], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [61.18333333333333, 16.591666666666665], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [60.58616666666666, 22.4752], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [56.85941666666667, 26.061778333333333], "type": "Point"}, "properties": {"Date": "2021-04-21", "Destination": "[\u0027QA RLF\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [52.82833333333333, 26.285], "type": "Point"}, "properties": {"Date": "2021-04-22", "Destination": "[\u0027QA RLF\u0027 \u0027QA RLFC=J\u0027 \"QA RLF0\u0027\" \u0027QA RLF ANCHORAGE\u0027 \u0027QA RLDRAS LAFFAN\u0027]", "IMO": "9431147", "Vessel": "AL BAHIYA", "Vessel Type": "Tankers-LNG Tanker"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_17bc04c61857d04c54511fde37a2c6b1.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_17bc04c61857d04c54511fde37a2c6b1.addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var poly_line_1f5ad7a96632fc3fcb5cae287b458503 = L.polyline(
+                [[34.571666666666665, 23.42833333333333], [34.62, 23.251666666666665], [36.635, 13.196666666666667], [37.84333333333333, 5.461666666666667], [37.193333333333335, 1.596666666666667], [36.147841666666665, -4.134885], [42.748333333333335, -9.96], [45.96666666666667, -8.775], [50.01109666666667, -7.1044366666666665], [50.003235, -7.070111666666667], [46.155, -8.851666666666667], [42.54333333333334, -10.203333333333331], [36.053333333333335, -4.241666666666666], [36.12833333333333, -4.16], [35.51166666666666, -6.985], [30.02833333333333, -13.49], [25.075186666666667, -16.8622], [17.543333333333333, -19.508333333333333], [10.682066666666667, -18.852606666666667], [6.414455, -15.607423333333331], [1.9001833333333331, -12.192093333333334], [4.152355, -12.629125], [0.7183333333333334, -11.305], [-3.885196666666667, -7.861118333333334], [-7.399901666666667, -5.082648333333333], [-12.792646666666666, -0.884655], [-18.57333333333333, 3.823333333333333], [-21.69865, 6.379895], [-22.62370333333333, 7.151983333333333], [-28.87, 12.55], [-34.94, 18.36], [-34.27235833333334, 27.73853833333333], [-30.031585, 33.437686666666664], [-23.201666666666668, 37.95333333333333], [-16.318925, 42.355356666666665], [-9.786666666666669, 46.94], [-3.986666666666667, 51.72166666666666], [0.351075, 55.80845166666667], [2.2116666666666664, 56.70666666666666], [6.24421, 58.68070333333333], [8.058333333333334, 59.58], [11.623333333333331, 60.735], [15.775, 61.20666666666666], [16.548333333333332, 61.2], [16.46, 61.255], [16.591666666666665, 61.18333333333333], [22.4752, 60.58616666666666], [26.061778333333333, 56.85941666666667], [26.285, 52.82833333333333]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_d919ceacf9efefb9a0be1a05cad9683e = L.circleMarker(
+                [50.003235, -7.070111666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_523012623558d9255ae8ea922d55b957 = L.circleMarker(
+                [34.571666666666665, 23.42833333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_16941c4a5ad7520f749f0f5ae85a403c = L.circleMarker(
+                [26.285, 52.82833333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_fedc02148d51ab50e7469a5bc7417b75 = L.circleMarker(
+                [50.003235, -7.070111666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_59598b3d42501678142c0a80f503ce86 = L.circleMarker(
+                [46.155, -8.851666666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_f2aeadf0aeb12e06d9d3e7dbf246ae81 = L.circleMarker(
+                [36.053333333333335, -4.241666666666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_6d6b8d8f2ef8a080ea85880da4f7fb83 = L.circleMarker(
+                [35.51166666666666, -6.985],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var circle_marker_4b7c564a48ef241fc7241974317fc6a4 = L.circleMarker(
+                [30.02833333333333, -13.49],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            var feature_group_3fc6a1116c08d0332e4d007f22133a1a = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_323d71f01298d16186fa12047a521992_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_323d71f01298d16186fa12047a521992_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_323d71f01298d16186fa12047a521992 = L.geoJson(null, {
+                onEachFeature: geo_json_323d71f01298d16186fa12047a521992_onEachFeature,
+            
+                pointToLayer: geo_json_323d71f01298d16186fa12047a521992_pointToLayer,
+        });
+
+        function geo_json_323d71f01298d16186fa12047a521992_add (data) {
+            geo_json_323d71f01298d16186fa12047a521992
+                .addData(data);
+        }
+            geo_json_323d71f01298d16186fa12047a521992_add({"features": [{"geometry": {"coordinates": [7.393618333333333, 54.218665], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027BE ANR\u0027 \u0027DE BRV\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [4.430723333333333, 53.20341], "type": "Point"}, "properties": {"Date": "2021-03-16", "Destination": "[\u0027GB SOU\u0027 \u0027BE ANR\u0027 \u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.643625, 50.33572166666666], "type": "Point"}, "properties": {"Date": "2021-03-21", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.63317, 45.25691833333333], "type": "Point"}, "properties": {"Date": "2021-03-22", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.1174, 42.31340333333333], "type": "Point"}, "properties": {"Date": "2021-03-22", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.209193333333333, 36.07764333333333], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [2.4363616666666665, 36.95753666666667], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [4.578926666666667, 37.27254666666666], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [13.390815, 36.58553333333333], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027SG SIN\u0027 \u0027EG PSD\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [13.231755, 36.91785166666666], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [4.029916666666667, 37.15592333333333], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [2.224075, 36.98985166666667], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.076168333333333, 36.20407], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-6.6414, 35.382935], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.000378333333334, 28.648861666666665], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.121605, 27.352921666666667], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-16.179591666666667, 24.44156], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.03655, 17.35707], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027SG SIN\u0027 \u0027SG SIL\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.880098333333333, 11.774728333333334], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.04865, 6.296538333333333], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.990336666666666, 4.88787], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.280926666666666, 2.6071], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.220493333333334, -2.8260466666666666], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.4397416666666665, -6.524933333333333], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [0.15677, -12.579266666666667], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [4.045595, -17.59817], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [7.728581666666667, -22.227551666666667], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [13.07994, -28.679881666666667], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [18.419785, -34.47558333333333], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [27.778, -33.74699], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [35.725355, -31.14599833333333], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [41.56487333333333, -28.949245], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [49.832436666666666, -25.16938333333333], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [54.635241666666666, -22.492001666666667], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [61.73333333333333, -18.176023333333333], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [67.49293666666667, -14.419091666666668], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [73.0787, -10.52098], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [79.30123666666667, -5.94388], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [83.10377333333334, -3.03531], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [89.76578333333333, 2.10361], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [96.91830166666666, 5.598073333333334], "type": "Point"}, "properties": {"Date": "2021-04-21", "Destination": "[\u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [97.70765833333331, 5.384506666666667], "type": "Point"}, "properties": {"Date": "2021-04-21", "Destination": "[\u0027CN HUA\u0027 \u0027SG SIN\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [111.14830166666668, 11.958821666666667], "type": "Point"}, "properties": {"Date": "2021-04-25", "Destination": "[\u0027CN HUA\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [113.86681333333334, 21.477305], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027CN HUA\u0027 \u0027JP THS\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [118.04359333333332, 23.299781666666668], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027JP THS\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [122.418185, 26.321575], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027JP THS\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}, {"geometry": {"coordinates": [129.07837833333335, 29.979388333333333], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027JP THS\u0027]", "IMO": "9620683", "Vessel": "MORNING CLAIRE", "Vessel Type": "Dry Cargo/Passenger-Vehicles Carrier"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_323d71f01298d16186fa12047a521992.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_323d71f01298d16186fa12047a521992.addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var poly_line_a5b271104e37af7a351eea82c2c16740 = L.polyline(
+                [[54.218665, 7.393618333333333], [53.20341, 4.430723333333333], [50.33572166666666, -1.643625], [45.25691833333333, -8.63317], [42.31340333333333, -10.1174], [36.07764333333333, -4.209193333333333], [36.95753666666667, 2.4363616666666665], [37.27254666666666, 4.578926666666667], [36.58553333333333, 13.390815], [36.91785166666666, 13.231755], [37.15592333333333, 4.029916666666667], [36.98985166666667, 2.224075], [36.20407, -4.076168333333333], [35.382935, -6.6414], [28.648861666666665, -13.000378333333334], [27.352921666666667, -14.121605], [24.44156, -16.179591666666667], [17.35707, -18.03655], [11.774728333333334, -17.880098333333333], [6.296538333333333, -14.04865], [4.88787, -12.990336666666666], [2.6071, -11.280926666666666], [-2.8260466666666666, -7.220493333333334], [-6.524933333333333, -4.4397416666666665], [-12.579266666666667, 0.15677], [-17.59817, 4.045595], [-22.227551666666667, 7.728581666666667], [-28.679881666666667, 13.07994], [-34.47558333333333, 18.419785], [-33.74699, 27.778], [-31.14599833333333, 35.725355], [-28.949245, 41.56487333333333], [-25.16938333333333, 49.832436666666666], [-22.492001666666667, 54.635241666666666], [-18.176023333333333, 61.73333333333333], [-14.419091666666668, 67.49293666666667], [-10.52098, 73.0787], [-5.94388, 79.30123666666667], [-3.03531, 83.10377333333334], [2.10361, 89.76578333333333], [5.598073333333334, 96.91830166666666], [5.384506666666667, 97.70765833333331], [11.958821666666667, 111.14830166666668], [21.477305, 113.86681333333334], [23.299781666666668, 118.04359333333332], [26.321575, 122.418185], [29.979388333333333, 129.07837833333335]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_e0376670ad3d54b963986d9438ee9052 = L.circleMarker(
+                [45.25691833333333, -8.63317],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_3384443e1e2fdfeb92c4996860f82a06 = L.circleMarker(
+                [54.218665, 7.393618333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_1f0c99403ddd20b6ead842dcefb55676 = L.circleMarker(
+                [29.979388333333333, 129.07837833333335],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_23c893148d7a9509f3a0b27aef461688 = L.circleMarker(
+                [42.31340333333333, -10.1174],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_744177a127827e9768c3fd71312faa82 = L.circleMarker(
+                [36.07764333333333, -4.209193333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var circle_marker_e3bc40f56cc2acff8e4489cf246dd105 = L.circleMarker(
+                [28.648861666666665, -13.000378333333334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            var feature_group_0b48eca9ac68cb202503d37b0c339f19 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_01b46d25750012dda41689d7080f8cf8_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_01b46d25750012dda41689d7080f8cf8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_01b46d25750012dda41689d7080f8cf8 = L.geoJson(null, {
+                onEachFeature: geo_json_01b46d25750012dda41689d7080f8cf8_onEachFeature,
+            
+                pointToLayer: geo_json_01b46d25750012dda41689d7080f8cf8_pointToLayer,
+        });
+
+        function geo_json_01b46d25750012dda41689d7080f8cf8_add (data) {
+            geo_json_01b46d25750012dda41689d7080f8cf8
+                .addData(data);
+        }
+            geo_json_01b46d25750012dda41689d7080f8cf8_add({"features": [{"geometry": {"coordinates": [3.7079466666666665, 52.17202833333333], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027SOUTHAMPTON\u0027 \u0027ROTTERDAM\u0027 \u0027SUEZ CANAL\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.604255, 50.31907666666667], "type": "Point"}, "properties": {"Date": "2021-03-22", "Destination": "[\u0027SUEZ CANAL\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.598693333333333, 45.32398833333333], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027SUEZ CANAL\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.114663333333333, 42.53467833333333], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027SUEZ CANAL\u0027 \u0027LAEMCHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.10516, 37.37784666666667], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027LAEMCHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.060185, 35.239865], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027LAEM CHABANG\u0027 \u0027LAEMCHABAOHORAGE\u0027 \u0027LAEMCHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.913016666666667, 31.187565], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-16.406948333333332, 25.00116166666667], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.161276666666662, 17.373578333333334], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.039628333333333, 11.601415], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.367885, 6.320991666666667], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.831013333333331, 2.634268333333333], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.54279, -3.667658333333333], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.010856666666666, -4.439616666666667], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-5.049555, -7.296358333333333], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.116565, -12.839853333333334], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [3.68403, -19.20907833333333], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [4.142203333333334, -19.78799], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [7.020946666666666, -23.332421666666665], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [12.107063333333333, -29.030876666666668], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [18.391746666666663, -34.70579166666667], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [27.677488333333333, -34.997836666666664], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [37.026, -34.35746666666667], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [45.90279833333334, -33.02698], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [54.29958666666667, -31.163021666666666], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [54.74662, -31.041796666666663], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [60.46332666666667, -29.372235], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [67.61156333333334, -26.840805], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [76.09090166666667, -23.208606666666668], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [83.943365, -19.24648833333333], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [84.01452, -19.208215], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [88.93812166666666, -16.418961666666668], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [94.199465, -13.218986666666666], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [101.10623, -8.956388333333333], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [106.16512166666666, -5.314821666666667], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [105.500805, 2.053311666666666], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [102.73885833333334, 8.717923333333333], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027PUSAN\u0027 \u0027LAEM CHABANG\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [117.458715, 22.92678666666667], "type": "Point"}, "properties": {"Date": "2021-04-27", "Destination": "[\u0027PUSAN\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [118.05103833333334, 23.37805], "type": "Point"}, "properties": {"Date": "2021-04-27", "Destination": "[\u0027PUSAN\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [120.05316666666668, 25.08904833333333], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027PUSAN\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [122.04414, 27.418758333333333], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027PUSAN\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.49499166666666, 33.381863333333335], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027PUSAN\u0027]", "IMO": "9625528", "Vessel": "HYUNDAI PRESTIGE", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_01b46d25750012dda41689d7080f8cf8.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_01b46d25750012dda41689d7080f8cf8.addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var poly_line_0274e0a03c19c365ad38e2bd1e0d6ca2 = L.polyline(
+                [[52.17202833333333, 3.7079466666666665], [50.31907666666667, -1.604255], [45.32398833333333, -8.598693333333333], [42.53467833333333, -10.114663333333333], [37.37784666666667, -11.10516], [35.239865, -12.060185], [31.187565, -13.913016666666667], [25.00116166666667, -16.406948333333332], [17.373578333333334, -18.161276666666662], [11.601415, -18.039628333333333], [6.320991666666667, -14.367885], [2.634268333333333, -11.831013333333331], [-3.667658333333333, -7.54279], [-4.439616666666667, -7.010856666666666], [-7.296358333333333, -5.049555], [-12.839853333333334, -1.116565], [-19.20907833333333, 3.68403], [-19.78799, 4.142203333333334], [-23.332421666666665, 7.020946666666666], [-29.030876666666668, 12.107063333333333], [-34.70579166666667, 18.391746666666663], [-34.997836666666664, 27.677488333333333], [-34.35746666666667, 37.026], [-33.02698, 45.90279833333334], [-31.163021666666666, 54.29958666666667], [-31.041796666666663, 54.74662], [-29.372235, 60.46332666666667], [-26.840805, 67.61156333333334], [-23.208606666666668, 76.09090166666667], [-19.24648833333333, 83.943365], [-19.208215, 84.01452], [-16.418961666666668, 88.93812166666666], [-13.218986666666666, 94.199465], [-8.956388333333333, 101.10623], [-5.314821666666667, 106.16512166666666], [2.053311666666666, 105.500805], [8.717923333333333, 102.73885833333334], [22.92678666666667, 117.458715], [23.37805, 118.05103833333334], [25.08904833333333, 120.05316666666668], [27.418758333333333, 122.04414], [33.381863333333335, 127.49499166666666]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var circle_marker_2e99d8910392c18529684cc12456a765 = L.circleMarker(
+                [50.31907666666667, -1.604255],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var circle_marker_fbf6871e5a8e878a16f5e189aa6818f7 = L.circleMarker(
+                [52.17202833333333, 3.7079466666666665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var circle_marker_33d5546e8ad04fdf977d87cb07bf4119 = L.circleMarker(
+                [33.381863333333335, 127.49499166666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var circle_marker_4960ac283df45bdd0597e95db82a7f5c = L.circleMarker(
+                [45.32398833333333, -8.598693333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var circle_marker_595401ca5339032d3670f5434f57cbe4 = L.circleMarker(
+                [42.53467833333333, -10.114663333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            var feature_group_6385dcc3477ce3f5064b1f4feebf3510 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_bd85fdbd674bb512f3e65713aeedf827_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_bd85fdbd674bb512f3e65713aeedf827_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bd85fdbd674bb512f3e65713aeedf827 = L.geoJson(null, {
+                onEachFeature: geo_json_bd85fdbd674bb512f3e65713aeedf827_onEachFeature,
+            
+                pointToLayer: geo_json_bd85fdbd674bb512f3e65713aeedf827_pointToLayer,
+        });
+
+        function geo_json_bd85fdbd674bb512f3e65713aeedf827_add (data) {
+            geo_json_bd85fdbd674bb512f3e65713aeedf827
+                .addData(data);
+        }
+            geo_json_bd85fdbd674bb512f3e65713aeedf827_add({"features": [{"geometry": {"coordinates": [9.921798333333331, 53.52923333333333], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027DEHAM\u003e\u003eNLRTM\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [4.813563333333334, 53.5111], "type": "Point"}, "properties": {"Date": "2021-03-17", "Destination": "[\u0027NLRTM\u003e\u003eEGP\u0027 \u0027NLRTM\u003e\u003eEGSUZ\u0027 \u0027DEHAM\u003e\u003eNLRTM\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.384016666666667, 50.253301666666665], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027NLRTM\u003e\u003eEGSUZ\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.615763333333334, 45.47347166666667], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027NLRTM\u003e\u003eEGSUZ\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.140021666666666, 42.568511666666666], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027 \u0027NLRTM\u003e\u003eEGSUZ\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.911263333333334, 36.621028333333335], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.39665, 35.808703333333334], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.997348333333331, 31.407443333333333], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.124423333333333, 25.105723333333334], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.258423333333333, 17.389916666666668], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027 \u0027NLRTM\u003e\u003eLK\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.92555, 11.731215], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.854653333333331, 6.354018333333333], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.922078333333332, 2.427788333333333], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-7.498028333333333, -3.551111666666667], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-6.35815, -5.076678333333334], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.9313183333333335, -6.961476666666667], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-0.6178333333333333, -12.739386666666666], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [3.847085, -18.46447], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [6.377903333333333, -21.695465], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [7.145793333333334, -22.659098333333333], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [12.342783333333331, -28.94678333333333], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [18.400075, -34.71794166666667], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [27.738225, -34.21944666666667], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [36.69321166666667, -31.597386666666665], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [41.56595333333333, -28.855436666666662], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [49.435435, -24.417181666666668], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [53.71407666666666, -21.66106], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [61.16458833333333, -16.43688], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [65.04251666666667, -12.081341666666669], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [69.403435, -6.779523333333334], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [74.52988666666667, -0.7544983333333334], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [77.43075333333333, 3.761728333333333], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027LKCMB\u003e\u003eMYTPP\u0027 \u0027NLRTM\u003e\u003eLKCMB\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [85.94227833333333, 5.924681666666666], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027LKCMB\u003e\u003eMYTPP\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [98.650665, 4.922545], "type": "Point"}, "properties": {"Date": "2021-04-22", "Destination": "[\u0027LKCMB\u003e\u003eMYTPP\u0027 \u0027MYTPP\u003e\u003eTWKHH\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [119.63065166666668, 21.93216333333333], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027TWKHH\u003c\u003cCNQDG\u0027 \u0027MYTPP\u003e\u003eTWKHH\u0027 \u0027TWKHH\u003c\u003cCNQDG     2FO\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [121.438635, 26.213636666666662], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027TWKHH\u003c\u003cCNQDG\u0027]", "IMO": "9786827", "Vessel": "EVER GIFTED", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_bd85fdbd674bb512f3e65713aeedf827.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_bd85fdbd674bb512f3e65713aeedf827.addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var poly_line_7afd02aa77d3482f46b7bcb9c92474cf = L.polyline(
+                [[53.52923333333333, 9.921798333333331], [53.5111, 4.813563333333334], [50.253301666666665, -1.384016666666667], [45.47347166666667, -8.615763333333334], [42.568511666666666, -10.140021666666666], [36.621028333333335, -10.911263333333334], [35.808703333333334, -11.39665], [31.407443333333333, -13.997348333333331], [25.105723333333334, -17.124423333333333], [17.389916666666668, -18.258423333333333], [11.731215, -17.92555], [6.354018333333333, -14.854653333333331], [2.427788333333333, -11.922078333333332], [-3.551111666666667, -7.498028333333333], [-5.076678333333334, -6.35815], [-6.961476666666667, -4.9313183333333335], [-12.739386666666666, -0.6178333333333333], [-18.46447, 3.847085], [-21.695465, 6.377903333333333], [-22.659098333333333, 7.145793333333334], [-28.94678333333333, 12.342783333333331], [-34.71794166666667, 18.400075], [-34.21944666666667, 27.738225], [-31.597386666666665, 36.69321166666667], [-28.855436666666662, 41.56595333333333], [-24.417181666666668, 49.435435], [-21.66106, 53.71407666666666], [-16.43688, 61.16458833333333], [-12.081341666666669, 65.04251666666667], [-6.779523333333334, 69.403435], [-0.7544983333333334, 74.52988666666667], [3.761728333333333, 77.43075333333333], [5.924681666666666, 85.94227833333333], [4.922545, 98.650665], [21.93216333333333, 119.63065166666668], [26.213636666666662, 121.438635]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_08df59e34cbcb838f17dc22b88f15381 = L.circleMarker(
+                [50.253301666666665, -1.384016666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_cd96820917ae877bdcec5cfa43868467 = L.circleMarker(
+                [53.52923333333333, 9.921798333333331],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_ab44ea84a2cd6bf34c5efebb0be70c4f = L.circleMarker(
+                [26.213636666666662, 121.438635],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_abef6cc9b88817d2a5dbf5ff5e1ed4ce = L.circleMarker(
+                [50.253301666666665, -1.384016666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_d27fc1b2b4d4eb2a4b3e919368e9c594 = L.circleMarker(
+                [42.568511666666666, -10.140021666666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_a93c554d7343f4bc3248df95d73461e3 = L.circleMarker(
+                [36.621028333333335, -10.911263333333334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var circle_marker_b5cfbf7f4387695ba7ae4baa07ded9ce = L.circleMarker(
+                [35.808703333333334, -11.39665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            var feature_group_6b71fe084b8c74465ea82f0f38806484 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_66131ee493228036b6e39840d9cdc2f5_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_66131ee493228036b6e39840d9cdc2f5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_66131ee493228036b6e39840d9cdc2f5 = L.geoJson(null, {
+                onEachFeature: geo_json_66131ee493228036b6e39840d9cdc2f5_onEachFeature,
+            
+                pointToLayer: geo_json_66131ee493228036b6e39840d9cdc2f5_pointToLayer,
+        });
+
+        function geo_json_66131ee493228036b6e39840d9cdc2f5_add (data) {
+            geo_json_66131ee493228036b6e39840d9cdc2f5
+                .addData(data);
+        }
+            geo_json_66131ee493228036b6e39840d9cdc2f5_add({"features": [{"geometry": {"coordinates": [12.267486666666668, 56.45824], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027NL RTM\u003eRU ULU\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [19.09063, 56.58081833333333], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027NL RTM\u003eRU ULU\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [19.542656666666662, 57.04047333333333], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027NL RTM\u003eRU ULU\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [24.963101666666667, 59.78289166666666], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027 \u0027NL RTM\u003eRU ULU\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [24.89763, 59.84542166666667], "type": "Point"}, "properties": {"Date": "2021-03-20", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [17.096843333333332, 55.89956333333333], "type": "Point"}, "properties": {"Date": "2021-03-21", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [10.73253, 57.85646666666667], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [6.0120233333333335, 55.90118833333333], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [5.593911666666667, 55.35720666666667], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.4203316666666668, 50.27301833333333], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.611058333333334, 45.425808333333336], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027 \u0027RU ULU\u003eEG PSD    \":\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.209755, 42.504065], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027RU ULU\u003eEG PSD\u0027 \u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.093105, 37.18395666666667], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.99683, 35.27652333333333], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.851875, 31.0129], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-16.880468333333333, 25.07835], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-20.002711666666663, 17.597385], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-19.973561666666665, 10.299421666666667], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.24582, 5.157816666666666], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.492823333333334, -0.7527083333333333], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.624448333333332, -4.322808333333334], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-5.981553333333333, -9.98656], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-4.53977, -11.701278333333333], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [-3.0573533333333334, -13.437053333333331], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [2.2609166666666667, -19.69337], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [6.7904333333333335, -24.58], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [11.577118333333331, -29.220405], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [18.38967, -34.70769166666667], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [27.747821666666667, -34.10292166666667], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [37.09057833333333, -31.806248333333333], "type": "Point"}, "properties": {"Date": "2021-04-21", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [42.77820833333333, -29.999286666666663], "type": "Point"}, "properties": {"Date": "2021-04-22", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [49.90399166666667, -27.27901], "type": "Point"}, "properties": {"Date": "2021-04-24", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [57.56756666666666, -23.771016666666668], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [61.02332666666667, -22.001216666666668], "type": "Point"}, "properties": {"Date": "2021-04-27", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [62.37160333333333, -21.27256333333333], "type": "Point"}, "properties": {"Date": "2021-04-27", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [70.01473333333334, -16.138045], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}, {"geometry": {"coordinates": [74.76038166666666, -12.556273333333332], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027RU ULU\u003eSG SIN\u0027]", "IMO": "9850692", "Vessel": "CLEAROCEAN AJAX", "Vessel Type": "Tankers-Crude/Oil Products Tanker"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_66131ee493228036b6e39840d9cdc2f5.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_66131ee493228036b6e39840d9cdc2f5.addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var poly_line_31a069a45e2b4d01b8f2a7ad0a20797c = L.polyline(
+                [[56.45824, 12.267486666666668], [56.58081833333333, 19.09063], [57.04047333333333, 19.542656666666662], [59.78289166666666, 24.963101666666667], [59.84542166666667, 24.89763], [55.89956333333333, 17.096843333333332], [57.85646666666667, 10.73253], [55.90118833333333, 6.0120233333333335], [55.35720666666667, 5.593911666666667], [50.27301833333333, -1.4203316666666668], [45.425808333333336, -8.611058333333334], [42.504065, -10.209755], [37.18395666666667, -11.093105], [35.27652333333333, -11.99683], [31.0129, -13.851875], [25.07835, -16.880468333333333], [17.597385, -20.002711666666663], [10.299421666666667, -19.973561666666665], [5.157816666666666, -18.24582], [-0.7527083333333333, -13.492823333333334], [-4.322808333333334, -10.624448333333332], [-9.98656, -5.981553333333333], [-11.701278333333333, -4.53977], [-13.437053333333331, -3.0573533333333334], [-19.69337, 2.2609166666666667], [-24.58, 6.7904333333333335], [-29.220405, 11.577118333333331], [-34.70769166666667, 18.38967], [-34.10292166666667, 27.747821666666667], [-31.806248333333333, 37.09057833333333], [-29.999286666666663, 42.77820833333333], [-27.27901, 49.90399166666667], [-23.771016666666668, 57.56756666666666], [-22.001216666666668, 61.02332666666667], [-21.27256333333333, 62.37160333333333], [-16.138045, 70.01473333333334], [-12.556273333333332, 74.76038166666666]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_348edef3c475bd93d5a48e4c4754f81e = L.circleMarker(
+                [57.85646666666667, 10.73253],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_9e93db80669626a3b2c570d2bf996bdf = L.circleMarker(
+                [56.45824, 12.267486666666668],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_cf09161aa05853ea068dcfa6d61aa004 = L.circleMarker(
+                [-12.556273333333332, 74.76038166666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_18eeda8fb96cb55dcf23c12972b760dc = L.circleMarker(
+                [55.35720666666667, 5.593911666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_c03010d945f843bcea86e89a58b07721 = L.circleMarker(
+                [50.27301833333333, -1.4203316666666668],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var circle_marker_8320dd5aec9f81df91b47a6099d5b32d = L.circleMarker(
+                [42.504065, -10.209755],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            var feature_group_f810489fda0416799daab8d5c28ca009 = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_a483e2f451ab395c92a928863c972fb3_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_a483e2f451ab395c92a928863c972fb3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a483e2f451ab395c92a928863c972fb3 = L.geoJson(null, {
+                onEachFeature: geo_json_a483e2f451ab395c92a928863c972fb3_onEachFeature,
+            
+                pointToLayer: geo_json_a483e2f451ab395c92a928863c972fb3_pointToLayer,
+        });
+
+        function geo_json_a483e2f451ab395c92a928863c972fb3_add (data) {
+            geo_json_a483e2f451ab395c92a928863c972fb3
+                .addData(data);
+        }
+            geo_json_a483e2f451ab395c92a928863c972fb3_add({"features": [{"geometry": {"coordinates": [9.910675, 53.533685], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027NLRTM\u0027 \u0027DEHAM\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [5.81, 54.13666666666666], "type": "Point"}, "properties": {"Date": "2021-03-15", "Destination": "[\u0027NLRTM\u0027 \u0027EGSUE\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.895, 50.41], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027EGSUE\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.588333333333333, 45.361666666666665], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027EGSUE\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.141666666666667, 42.59333333333333], "type": "Point"}, "properties": {"Date": "2021-03-25", "Destination": "[\u0027EGSUE\u0027 \u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-11.061921666666668, 37.292836666666666], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-14.861666666666666, 33.0], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-19.13, 25.39333333333333], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-20.526835, 17.66449], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.491666666666667, 11.09], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-15.783776666666666, 6.431198333333334], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.663836666666668, 0.9332733333333332], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-9.18662, -4.0920266666666665], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-5.575, -8.903333333333334], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-2.2916666666666665, -13.075], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [2.931666666666666, -19.52833333333333], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [6.9006, -23.979441666666663], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [12.074398333333331, -29.041091666666667], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [18.398595, -34.63908], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [27.713898333333333, -34.528945], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [36.777785, -31.635531666666665], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [39.42902166666666, -30.603248333333333], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [41.889516666666665, -29.61038333333333], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [49.85075833333333, -25.8663], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [55.39833333333333, -22.831666666666667], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027SGSIN PWBGA\u0027 \u0027SGSIN\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [61.84104666666666, -18.91234833333333], "type": "Point"}, "properties": {"Date": "2021-04-13", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [68.31592166666667, -14.699138333333334], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [73.21753666666666, -11.141066666666667], "type": "Point"}, "properties": {"Date": "2021-04-15", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [79.74666666666667, -6.085], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [82.87751, -3.5340083333333334], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [82.88, -3.53], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [82.89166666666667, -3.52], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [83.22, -3.248333333333333], "type": "Point"}, "properties": {"Date": "2021-04-17", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [89.75333333333333, 2.1016666666666666], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [94.54833333333332, 6.05], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027SGSIN PWBGA\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [97.89, 5.7716666666666665], "type": "Point"}, "properties": {"Date": "2021-04-20", "Destination": "[\u0027SGSIN PWBGA\u0027 \u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [106.04833333333332, 4.385], "type": "Point"}, "properties": {"Date": "2021-04-25", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [110.32833333333332, 10.018333333333333], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [115.63666666666668, 16.043333333333333], "type": "Point"}, "properties": {"Date": "2021-04-28", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [117.78666666666666, 18.426666666666662], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [118.79666666666668, 19.535], "type": "Point"}, "properties": {"Date": "2021-04-29", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [122.85166666666667, 25.883333333333333], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027CNTAO\u0027]", "IMO": "9863314", "Vessel": "HMM DUBLIN", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_a483e2f451ab395c92a928863c972fb3.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a483e2f451ab395c92a928863c972fb3.addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var poly_line_3d31cdba4a08c8442e7cecb06b3bac34 = L.polyline(
+                [[53.533685, 9.910675], [54.13666666666666, 5.81], [50.41, -1.895], [45.361666666666665, -8.588333333333333], [42.59333333333333, -10.141666666666667], [37.292836666666666, -11.061921666666668], [33.0, -14.861666666666666], [25.39333333333333, -19.13], [17.66449, -20.526835], [11.09, -18.491666666666667], [6.431198333333334, -15.783776666666666], [0.9332733333333332, -12.663836666666668], [-4.0920266666666665, -9.18662], [-8.903333333333334, -5.575], [-13.075, -2.2916666666666665], [-19.52833333333333, 2.931666666666666], [-23.979441666666663, 6.9006], [-29.041091666666667, 12.074398333333331], [-34.63908, 18.398595], [-34.528945, 27.713898333333333], [-31.635531666666665, 36.777785], [-30.603248333333333, 39.42902166666666], [-29.61038333333333, 41.889516666666665], [-25.8663, 49.85075833333333], [-22.831666666666667, 55.39833333333333], [-18.91234833333333, 61.84104666666666], [-14.699138333333334, 68.31592166666667], [-11.141066666666667, 73.21753666666666], [-6.085, 79.74666666666667], [-3.5340083333333334, 82.87751], [-3.53, 82.88], [-3.52, 82.89166666666667], [-3.248333333333333, 83.22], [2.1016666666666666, 89.75333333333333], [6.05, 94.54833333333332], [5.7716666666666665, 97.89], [4.385, 106.04833333333332], [10.018333333333333, 110.32833333333332], [16.043333333333333, 115.63666666666668], [18.426666666666662, 117.78666666666666], [19.535, 118.79666666666668], [25.883333333333333, 122.85166666666667]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_153cf4a746c9078ec4ecccb84605a7cd = L.circleMarker(
+                [50.41, -1.895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_a12d5b1ea7a3406c84e9c7a48f7b2c44 = L.circleMarker(
+                [53.533685, 9.910675],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_4ab14dab88a34ed18ebd857bd7cd42d2 = L.circleMarker(
+                [25.883333333333333, 122.85166666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_5c83cd54ced770ca1b251e9d95ec334f = L.circleMarker(
+                [50.41, -1.895],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_40096fc37fe49aa1c5945a2379f52e2e = L.circleMarker(
+                [42.59333333333333, -10.141666666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var circle_marker_6ef6814088f0d6e3d1cfc39c34598c01 = L.circleMarker(
+                [33.0, -14.861666666666666],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            var feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_01ca8c00a4cea6314637a978ae53a957_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3};
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_01ca8c00a4cea6314637a978ae53a957_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_01ca8c00a4cea6314637a978ae53a957 = L.geoJson(null, {
+                onEachFeature: geo_json_01ca8c00a4cea6314637a978ae53a957_onEachFeature,
+            
+                pointToLayer: geo_json_01ca8c00a4cea6314637a978ae53a957_pointToLayer,
+        });
+
+        function geo_json_01ca8c00a4cea6314637a978ae53a957_add (data) {
+            geo_json_01ca8c00a4cea6314637a978ae53a957
+                .addData(data);
+        }
+            geo_json_01ca8c00a4cea6314637a978ae53a957_add({"features": [{"geometry": {"coordinates": [4.26, 51.35], "type": "Point"}, "properties": {"Date": "2021-03-14", "Destination": "[\u0027BEANR\u0027 \u0027EGPSA\u0027 \u0027GBLGP\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.8686416666666668, 50.40132166666667], "type": "Point"}, "properties": {"Date": "2021-03-23", "Destination": "[\u0027EGPSA\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.588333333333333, 45.43333333333333], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027EGPSD\u0027 \u0027EGPSA\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-10.103333333333332, 42.615], "type": "Point"}, "properties": {"Date": "2021-03-24", "Destination": "[\u0027EGPSD\u0027 \u0027SGSIN\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-6.636666666666667, 35.428333333333335], "type": "Point"}, "properties": {"Date": "2021-03-26", "Destination": "[\u0027SGSIN\u0027 \u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-13.053533333333334, 28.797733333333333], "type": "Point"}, "properties": {"Date": "2021-03-27", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-17.010871666666667, 25.097806666666667], "type": "Point"}, "properties": {"Date": "2021-03-28", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-19.99379833333333, 17.600906666666667], "type": "Point"}, "properties": {"Date": "2021-03-29", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-18.49333333333333, 11.083333333333334], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-15.788333333333334, 6.421666666666667], "type": "Point"}, "properties": {"Date": "2021-03-30", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-12.653098333333332, 0.959], "type": "Point"}, "properties": {"Date": "2021-03-31", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-8.938171666666667, -4.05205], "type": "Point"}, "properties": {"Date": "2021-04-01", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-5.4265783333333335, -8.391168333333333], "type": "Point"}, "properties": {"Date": "2021-04-02", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [-1.675, -12.955], "type": "Point"}, "properties": {"Date": "2021-04-03", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [3.657785, -19.31133], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [3.827636666666667, -19.509823333333333], "type": "Point"}, "properties": {"Date": "2021-04-04", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [7.04358, -23.221415], "type": "Point"}, "properties": {"Date": "2021-04-05", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [12.396273333333331, -28.92874833333333], "type": "Point"}, "properties": {"Date": "2021-04-06", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [18.38087, -34.81680166666667], "type": "Point"}, "properties": {"Date": "2021-04-07", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [27.752991666666667, -34.06807333333333], "type": "Point"}, "properties": {"Date": "2021-04-08", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [36.368993333333336, -31.441446666666668], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [40.34589666666667, -30.125536666666665], "type": "Point"}, "properties": {"Date": "2021-04-09", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [41.851885, -29.59474], "type": "Point"}, "properties": {"Date": "2021-04-10", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [49.86833333333333, -26.383333333333333], "type": "Point"}, "properties": {"Date": "2021-04-11", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [56.29743166666667, -23.226376666666667], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [61.995, -20.09], "type": "Point"}, "properties": {"Date": "2021-04-12", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [69.86333333333333, -15.381666666666666], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [74.39724333333334, -12.433803333333334], "type": "Point"}, "properties": {"Date": "2021-04-14", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [80.525, -7.568333333333333], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [84.58833333333334, -3.628333333333333], "type": "Point"}, "properties": {"Date": "2021-04-16", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [89.95333333333333, 1.57], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [94.58, 6.053333333333334], "type": "Point"}, "properties": {"Date": "2021-04-18", "Destination": "[\u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [97.79166666666669, 5.648333333333333], "type": "Point"}, "properties": {"Date": "2021-04-19", "Destination": "[\u0027CNYTN\u0027 \u0027SGSIN(PWBGA)\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [106.03166666666668, 4.413333333333333], "type": "Point"}, "properties": {"Date": "2021-04-24", "Destination": "[\u0027CNYTN\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [109.91, 10.18], "type": "Point"}, "properties": {"Date": "2021-04-25", "Destination": "[\u0027CNYTN\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [113.425, 17.355], "type": "Point"}, "properties": {"Date": "2021-04-26", "Destination": "[\u0027TWKHH\u0027 \u0027HKHKG\u0027 \u0027CNYTN\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}, {"geometry": {"coordinates": [118.23590333333334, 22.378816666666665], "type": "Point"}, "properties": {"Date": "2021-04-30", "Destination": "[\u0027TWKHH\u0027]", "IMO": "9868338", "Vessel": "HMM ROTTERDAM", "Vessel Type": "Dry Cargo/Passenger-Container Ship (Fully Cellular)"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_01ca8c00a4cea6314637a978ae53a957.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let aliases = ["Date", "Destination", "Vessel", "IMO", "Vessel Type"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_01ca8c00a4cea6314637a978ae53a957.addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var poly_line_c031ad371e7d0c5870fe51283d1af3bd = L.polyline(
+                [[51.35, 4.26], [50.40132166666667, -1.8686416666666668], [45.43333333333333, -8.588333333333333], [42.615, -10.103333333333332], [35.428333333333335, -6.636666666666667], [28.797733333333333, -13.053533333333334], [25.097806666666667, -17.010871666666667], [17.600906666666667, -19.99379833333333], [11.083333333333334, -18.49333333333333], [6.421666666666667, -15.788333333333334], [0.959, -12.653098333333332], [-4.05205, -8.938171666666667], [-8.391168333333333, -5.4265783333333335], [-12.955, -1.675], [-19.31133, 3.657785], [-19.509823333333333, 3.827636666666667], [-23.221415, 7.04358], [-28.92874833333333, 12.396273333333331], [-34.81680166666667, 18.38087], [-34.06807333333333, 27.752991666666667], [-31.441446666666668, 36.368993333333336], [-30.125536666666665, 40.34589666666667], [-29.59474, 41.851885], [-26.383333333333333, 49.86833333333333], [-23.226376666666667, 56.29743166666667], [-20.09, 61.995], [-15.381666666666666, 69.86333333333333], [-12.433803333333334, 74.39724333333334], [-7.568333333333333, 80.525], [-3.628333333333333, 84.58833333333334], [1.57, 89.95333333333333], [6.053333333333334, 94.58], [5.648333333333333, 97.79166666666669], [4.413333333333333, 106.03166666666668], [10.18, 109.91], [17.355, 113.425], [22.378816666666665, 118.23590333333334]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_0d424fcf1dd96a410e25725e39b55031 = L.circleMarker(
+                [50.40132166666667, -1.8686416666666668],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_b2efe23206cc1fc532afe35df086cc1e = L.circleMarker(
+                [51.35, 4.26],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_f3869ff49480765ca65a1116f8030ec6 = L.circleMarker(
+                [22.378816666666665, 118.23590333333334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_6eca80585ef77c64928e791635e887ee = L.circleMarker(
+                [45.43333333333333, -8.588333333333333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_16c28faf90b6f33eb2b4f429bb55fcda = L.circleMarker(
+                [42.615, -10.103333333333332],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_d0ec66249f611e01191fbd86dc645e6b = L.circleMarker(
+                [35.428333333333335, -6.636666666666667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var circle_marker_af34d0d15d0cd73267fcb9acde8a4f9e = L.circleMarker(
+                [28.797733333333333, -13.053533333333334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "aqua", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+    
+            var layer_control_726d6f2cbaf1cc4e2f592ef619fb474a_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8362c439695f483e7bfd639849972e21,
+                },
+                overlays :  {
+                    "9431135" : feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb,
+                    "9431147" : feature_group_979267f0761ceebebe9481de11e6bc4e,
+                    "9620683" : feature_group_3fc6a1116c08d0332e4d007f22133a1a,
+                    "9625528" : feature_group_0b48eca9ac68cb202503d37b0c339f19,
+                    "9786827" : feature_group_6385dcc3477ce3f5064b1f4feebf3510,
+                    "9850692" : feature_group_6b71fe084b8c74465ea82f0f38806484,
+                    "9863314" : feature_group_f810489fda0416799daab8d5c28ca009,
+                    "9868338" : feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb,
+                },
+            };
+            let layer_control_726d6f2cbaf1cc4e2f592ef619fb474a = L.control.layers(
+                layer_control_726d6f2cbaf1cc4e2f592ef619fb474a_layers.base_layers,
+                layer_control_726d6f2cbaf1cc4e2f592ef619fb474a_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+
+        
+    
+            tile_layer_8362c439695f483e7bfd639849972e21.addTo(map_c5759b941cfb8defc5ffbc6c6be1f2b1);
+        
+    
+            geo_json_94651ba69eb8de3915411bab7cb902bc.addTo(feature_group_fb3624cf55a6d2ca3191c0b0f9d1e9eb);
+        
+    
+            geo_json_17bc04c61857d04c54511fde37a2c6b1.addTo(feature_group_979267f0761ceebebe9481de11e6bc4e);
+        
+    
+            geo_json_323d71f01298d16186fa12047a521992.addTo(feature_group_3fc6a1116c08d0332e4d007f22133a1a);
+        
+    
+            geo_json_01b46d25750012dda41689d7080f8cf8.addTo(feature_group_0b48eca9ac68cb202503d37b0c339f19);
+        
+    
+            geo_json_bd85fdbd674bb512f3e65713aeedf827.addTo(feature_group_6385dcc3477ce3f5064b1f4feebf3510);
+        
+    
+            geo_json_66131ee493228036b6e39840d9cdc2f5.addTo(feature_group_6b71fe084b8c74465ea82f0f38806484);
+        
+    
+            geo_json_a483e2f451ab395c92a928863c972fb3.addTo(feature_group_f810489fda0416799daab8d5c28ca009);
+        
+    
+            geo_json_01ca8c00a4cea6314637a978ae53a957.addTo(feature_group_d43f33ac3acdc41f1d8bcf0dad533dbb);
+        
+</script>
+</html>

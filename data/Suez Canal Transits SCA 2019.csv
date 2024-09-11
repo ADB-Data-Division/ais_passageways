@@ -1,13 +1,217 @@
-﻿Date,Tankers,LNG Ships,Bulk Carrier,General Cargo,Container Ships,RoRo,Car Carrier,Passenger Ships,Others,Total
-01/01/2019,450,47,307,125,458,16,70,11,32,1516
-01/02/2019,377,43,264,103,437,15,70,9,35,1353
-01/03/2019,477,57,314,127,447,24,76,9,58,1589
-01/04/2019,414,56,321,124,450,17,87,21,90,1580
-01/05/2019,428,74,316,130,484,21,71,12,64,1600
-01/06/2019,388,71,278,135,449,22,72,2,59,1476
-01/07/2019,379,78,359,133,464,16,72,1,37,1539
-01/08/2019,420,70,416,146,475,22,78,1,51,1679
-01/09/2019,412,65,404,91,432,14,62,2,39,1521
-01/10/2019,482,62,443,119,446,20,80,12,117,1781
-01/11/2019,454,63,370,133,410,16,71,18,59,1594
-01/12/2019,482,64,408,132,423,19,72,7,44,1651
+﻿Date,Vessel Type,Status,Transit Count,Net Tonnage
+01/01/2019,Tankers,Laden,352,14822
+01/01/2019,LNG Ships,Laden,25,2729
+01/01/2019,Bulk Carrier,Laden,247,9319
+01/01/2019,General Cargo,Laden,111,1169
+01/01/2019,Container Ships,Laden,451,52645
+01/01/2019,RoRo,Laden,15,459
+01/01/2019,Car Carrier,Laden,68,4372
+01/01/2019,Passenger Ships,Laden,10,248
+01/01/2019,Others,Laden,30,264
+01/01/2019,Tankers,Ballast,98,5292
+01/01/2019,LNG Ships,Ballast,22,2323
+01/01/2019,Bulk Carrier,Ballast,60,2118
+01/01/2019,General Cargo,Ballast,14,148
+01/01/2019,Container Ships,Ballast,7,225
+01/01/2019,RoRo,Ballast,1,8
+01/01/2019,Car Carrier,Ballast,2,98
+01/01/2019,Passenger Ships,Ballast,1,1
+01/01/2019,Others,Ballast,2,10
+01/02/2019,Tankers,Laden,315,13695
+01/02/2019,LNG Ships,Laden,25,2720
+01/02/2019,Bulk Carrier,Laden,223,8241
+01/02/2019,General Cargo,Laden,85,1045
+01/02/2019,Container Ships,Laden,433,50197
+01/02/2019,RoRo,Laden,12,361
+01/02/2019,Car Carrier,Laden,68,4300
+01/02/2019,Passenger Ships,Laden,8,70
+01/02/2019,Others,Laden,27,182
+01/02/2019,Tankers,Ballast,62,3629
+01/02/2019,LNG Ships,Ballast,18,1972
+01/02/2019,Bulk Carrier,Ballast,41,1500
+01/02/2019,General Cargo,Ballast,18,167
+01/02/2019,Container Ships,Ballast,4,175
+01/02/2019,RoRo,Ballast,3,89
+01/02/2019,Car Carrier,Ballast,2,65
+01/02/2019,Passenger Ships,Ballast,1,1
+01/02/2019,Others,Ballast,8,140
+01/03/2019,Tankers,Laden,383,15710
+01/03/2019,LNG Ships,Laden,35,3944
+01/03/2019,Bulk Carrier,Laden,273,9914
+01/03/2019,General Cargo,Laden,109,1241
+01/03/2019,Container Ships,Laden,442,51796
+01/03/2019,RoRo,Laden,23,586
+01/03/2019,Car Carrier,Laden,72,4609
+01/03/2019,Passenger Ships,Laden,9,674
+01/03/2019,Others,Laden,57,403
+01/03/2019,Tankers,Ballast,94,4401
+01/03/2019,LNG Ships,Ballast,22,2468
+01/03/2019,Bulk Carrier,Ballast,41,1520
+01/03/2019,General Cargo,Ballast,18,200
+01/03/2019,Container Ships,Ballast,5,98
+01/03/2019,RoRo,Ballast,1,8
+01/03/2019,Car Carrier,Ballast,4,219
+01/03/2019,Passenger Ships,Ballast,0,0
+01/03/2019,Others,Ballast,1,5
+01/04/2019,Tankers,Laden,344,15227
+01/04/2019,LNG Ships,Laden,34,3961
+01/04/2019,Bulk Carrier,Laden,292,10950
+01/04/2019,General Cargo,Laden,104,1249
+01/04/2019,Container Ships,Laden,447,51444
+01/04/2019,RoRo,Laden,17,498
+01/04/2019,Car Carrier,Laden,81,5277
+01/04/2019,Passenger Ships,Laden,19,1532
+01/04/2019,Others,Laden,85,617
+01/04/2019,Tankers,Ballast,70,3346
+01/04/2019,LNG Ships,Ballast,22,2642
+01/04/2019,Bulk Carrier,Ballast,29,1036
+01/04/2019,General Cargo,Ballast,20,141
+01/04/2019,Container Ships,Ballast,3,50
+01/04/2019,RoRo,Ballast,0,0
+01/04/2019,Car Carrier,Ballast,6,308
+01/04/2019,Passenger Ships,Ballast,2,5
+01/04/2019,Others,Ballast,5,58
+01/05/2019,Tankers,Laden,343,14923
+01/05/2019,LNG Ships,Laden,38,4417
+01/05/2019,Bulk Carrier,Laden,278,10107
+01/05/2019,General Cargo,Laden,98,1099
+01/05/2019,Container Ships,Laden,482,57339
+01/05/2019,RoRo,Laden,18,536
+01/05/2019,Car Carrier,Laden,70,4514
+01/05/2019,Passenger Ships,Laden,12,648
+01/05/2019,Others,Laden,62,445
+01/05/2019,Tankers,Ballast,85,4648
+01/05/2019,LNG Ships,Ballast,36,4215
+01/05/2019,Bulk Carrier,Ballast,38,1555
+01/05/2019,General Cargo,Ballast,32,332
+01/05/2019,Container Ships,Ballast,2,18
+01/05/2019,RoRo,Ballast,3,17
+01/05/2019,Car Carrier,Ballast,1,54
+01/05/2019,Passenger Ships,Ballast,0,0
+01/05/2019,Others,Ballast,2,47
+01/06/2019,Tankers,Laden,314,13835
+01/06/2019,LNG Ships,Laden,44,4999
+01/06/2019,Bulk Carrier,Laden,248,9384
+01/06/2019,General Cargo,Laden,111,1334
+01/06/2019,Container Ships,Laden,447,53626
+01/06/2019,RoRo,Laden,19,520
+01/06/2019,Car Carrier,Laden,67,4315
+01/06/2019,Passenger Ships,Laden,2,123
+01/06/2019,Others,Laden,55,332
+01/06/2019,Tankers,Ballast,74,4599
+01/06/2019,LNG Ships,Ballast,27,3077
+01/06/2019,Bulk Carrier,Ballast,30,1302
+01/06/2019,General Cargo,Ballast,24,209
+01/06/2019,Container Ships,Ballast,2,90
+01/06/2019,RoRo,Ballast,3,131
+01/06/2019,Car Carrier,Ballast,5,272
+01/06/2019,Passenger Ships,Ballast,0,0
+01/06/2019,Others,Ballast,4,85
+01/07/2019,Tankers,Laden,302,13595
+01/07/2019,LNG Ships,Laden,41,4554
+01/07/2019,Bulk Carrier,Laden,271,11073
+01/07/2019,General Cargo,Laden,112,1411
+01/07/2019,Container Ships,Laden,462,55360
+01/07/2019,RoRo,Laden,15,536
+01/07/2019,Car Carrier,Laden,68,4341
+01/07/2019,Passenger Ships,Laden,0,0
+01/07/2019,Others,Laden,34,181
+01/07/2019,Tankers,Ballast,77,3949
+01/07/2019,LNG Ships,Ballast,37,4391
+01/07/2019,Bulk Carrier,Ballast,88,3687
+01/07/2019,General Cargo,Ballast,21,187
+01/07/2019,Container Ships,Ballast,2,26
+01/07/2019,RoRo,Ballast,1,20
+01/07/2019,Car Carrier,Ballast,4,211
+01/07/2019,Passenger Ships,Ballast,1,12
+01/07/2019,Others,Ballast,3,40
+01/08/2019,Tankers,Laden,340,14968
+01/08/2019,LNG Ships,Laden,36,4147
+01/08/2019,Bulk Carrier,Laden,325,12250
+01/08/2019,General Cargo,Laden,120,1316
+01/08/2019,Container Ships,Laden,467,55535
+01/08/2019,RoRo,Laden,18,526
+01/08/2019,Car Carrier,Laden,68,4332
+01/08/2019,Passenger Ships,Laden,1,73
+01/08/2019,Others,Laden,43,220
+01/08/2019,Tankers,Ballast,80,4232
+01/08/2019,LNG Ships,Ballast,34,3799
+01/08/2019,Bulk Carrier,Ballast,91,3467
+01/08/2019,General Cargo,Ballast,26,189
+01/08/2019,Container Ships,Ballast,8,361
+01/08/2019,RoRo,Ballast,4,22
+01/08/2019,Car Carrier,Ballast,10,490
+01/08/2019,Passenger Ships,Ballast,0,0
+01/08/2019,Others,Ballast,8,73
+01/09/2019,Tankers,Laden,301,13058
+01/09/2019,LNG Ships,Laden,36,4186
+01/09/2019,Bulk Carrier,Laden,327,11804
+01/09/2019,General Cargo,Laden,74,812
+01/09/2019,Container Ships,Laden,422,51629
+01/09/2019,RoRo,Laden,11,325
+01/09/2019,Car Carrier,Laden,62,3962
+01/09/2019,Passenger Ships,Laden,0,0
+01/09/2019,Others,Laden,35,178
+01/09/2019,Tankers,Ballast,111,5510
+01/09/2019,LNG Ships,Ballast,29,3419
+01/09/2019,Bulk Carrier,Ballast,77,3448
+01/09/2019,General Cargo,Ballast,18,136
+01/09/2019,Container Ships,Ballast,10,368
+01/09/2019,RoRo,Ballast,3,15
+01/09/2019,Car Carrier,Ballast,0,0
+01/09/2019,Passenger Ships,Ballast,2,30
+01/09/2019,Others,Ballast,4,94
+01/10/2019,Tankers,Laden,361,15399
+01/10/2019,LNG Ships,Laden,30,3489
+01/10/2019,Bulk Carrier,Laden,338,12529
+01/10/2019,General Cargo,Laden,100,1128
+01/10/2019,Container Ships,Laden,440,54668
+01/10/2019,RoRo,Laden,19,573
+01/10/2019,Car Carrier,Laden,76,4923
+01/10/2019,Passenger Ships,Laden,9,651
+01/10/2019,Others,Laden,112,259
+01/10/2019,Tankers,Ballast,121,6581
+01/10/2019,LNG Ships,Ballast,32,3725
+01/10/2019,Bulk Carrier,Ballast,105,4248
+01/10/2019,General Cargo,Ballast,19,174
+01/10/2019,Container Ships,Ballast,6,283
+01/10/2019,RoRo,Ballast,1,4
+01/10/2019,Car Carrier,Ballast,4,165
+01/10/2019,Passenger Ships,Ballast,3,25
+01/10/2019,Others,Ballast,5,95
+01/11/2019,Tankers,Laden,327,14646
+01/11/2019,LNG Ships,Laden,37,3975
+01/11/2019,Bulk Carrier,Laden,291,10903
+01/11/2019,General Cargo,Laden,101,1143
+01/11/2019,Container Ships,Laden,406,49351
+01/11/2019,RoRo,Laden,12,475
+01/11/2019,Car Carrier,Laden,67,4201
+01/11/2019,Passenger Ships,Laden,18,1242
+01/11/2019,Others,Laden,59,346
+01/11/2019,Tankers,Ballast,127,8431
+01/11/2019,LNG Ships,Ballast,26,2900
+01/11/2019,Bulk Carrier,Ballast,79,3380
+01/11/2019,General Cargo,Ballast,32,321
+01/11/2019,Container Ships,Ballast,4,75
+01/11/2019,RoRo,Ballast,4,73
+01/11/2019,Car Carrier,Ballast,4,206
+01/11/2019,Passenger Ships,Ballast,0,0
+01/11/2019,Others,Ballast,0,0
+01/12/2019,Tankers,Laden,357,15487
+01/12/2019,LNG Ships,Laden,35,3582
+01/12/2019,Bulk Carrier,Laden,326,12511
+01/12/2019,General Cargo,Laden,98,1010
+01/12/2019,Container Ships,Laden,422,50730
+01/12/2019,RoRo,Laden,14,531
+01/12/2019,Car Carrier,Laden,68,4360
+01/12/2019,Passenger Ships,Laden,7,154
+01/12/2019,Others,Laden,42,413
+01/12/2019,Tankers,Ballast,125,8207
+01/12/2019,LNG Ships,Ballast,29,3065
+01/12/2019,Bulk Carrier,Ballast,82,3212
+01/12/2019,General Cargo,Ballast,34,306
+01/12/2019,Container Ships,Ballast,1,12
+01/12/2019,RoRo,Ballast,5,78
+01/12/2019,Car Carrier,Ballast,4,172
+01/12/2019,Passenger Ships,Ballast,0,0
+01/12/2019,Others,Ballast,2,37
