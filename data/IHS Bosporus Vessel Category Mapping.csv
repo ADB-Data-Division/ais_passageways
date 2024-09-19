@@ -1,0 +1,29 @@
+StatCode5,ShiptypeLevel2,ShiptypeLevel5,Admin Vessel Type
+A11B2TG,Tankers,LPG Tanker,LPG
+A11B2TH,Tankers,LPG/Chemical Tanker,"Chemical Tanker, Other Tankers"
+A12A2TC,Tankers,Chemical Tanker,"Chemical Tanker, Other Tankers"
+A12B2TR,Tankers,Chemical/Products Tanker,"Chemical Tanker, Other Tankers"
+A12D2LV,Tankers,Vegetable Oil Tanker,"Chemical Tanker, Other Tankers"
+A13A2TV,Tankers,Crude Oil Tanker,"Chemical Tanker, Other Tankers"
+A13A2TW,Tankers,Crude/Oil Products Tanker,"Chemical Tanker, Other Tankers"
+A13B2TP,Tankers,Products Tanker,"Chemical Tanker, Other Tankers"
+A13C2LA,Tankers,Asphalt/Bitumen Tanker,"Chemical Tanker, Other Tankers"
+A21A2BC,Bulk Carriers,Bulk Carrier,Bulk Carrier
+A22A2BB,Bulk Carriers,Bulk/Oil Carrier (OBO),Bulk Carrier
+A22A2BN,Bulk Carriers,Bulk/Caustic Soda Carrier (CABU),Bulk Carrier
+A22B2BR,Bulk Carriers,Ore/Oil Carrier,Bulk Carrier
+A23A2BD,Bulk Carriers,"Bulk Carrier, Self-discharging",Bulk Carrier
+A24A2BT,Bulk Carriers,Cement Carrier,Cement Carrier
+A24D2BA,Bulk Carriers,Aggregates Carrier,Bulk Carrier
+A31A2GA,Dry Cargo/Passenger,General Cargo Ship (with Ro-Ro facility),RoRo
+A31A2GO,Dry Cargo/Passenger,Open Hatch Cargo Ship,General Cargo Ship
+A31A2GT,Dry Cargo/Passenger,General Cargo/Tanker,General Cargo Ship
+A31A2GX,Dry Cargo/Passenger,General Cargo Ship,General Cargo Ship
+A33A2CC,Dry Cargo/Passenger,Container Ship (Fully Cellular),Container Ship
+A34A2GR,Dry Cargo/Passenger,Refrigerated Cargo Ship,Refrigerated Cargo Ship
+A35A2RR,Dry Cargo/Passenger,Ro-Ro Cargo Ship,RoRo
+A35B2RV,Dry Cargo/Passenger,Vehicles Carrier,Vehicle Carrier
+A36A2PR,Dry Cargo/Passenger,Passenger/Ro-Ro Ship (Vehicles),RoRo
+A37B2PS,Dry Cargo/Passenger,Passenger Ship,Passenger Ship
+A38A2GL,Dry Cargo/Passenger,Livestock Carrier,Livestock Carrier
+A38C2GH,Dry Cargo/Passenger,Heavy Load Carrier,General Cargo Ship
