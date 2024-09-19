@@ -1,0 +1,52 @@
+﻿Vessel Type Mapped,Date,Admin Vessel Type,Transit Count
+Bulk Carrier,01/01/2022,Barç (Barge / Barge Carrier),0
+Bulk Carrier,01/01/2022,Dökme Yük Gemisi (Bulk Carrier),725
+Cement Carrier,01/01/2022,Çimento Gemisi (Cement Carrier) ,1
+Container Ship,01/01/2022,Konteyner Gemisi (Container Ship),227
+Exclude,01/01/2022,Feribot (Ferry),0
+General Cargo Ship,01/01/2022,Genel Kargo Gemisi (General Cargo Ship),1262
+Livestock Carrier,01/01/2022,Canlı Hayvan Taşıyan Gemi (Livestock Carrier),35
+Exclude,01/01/2022,Savaş Gemisi (Naval),12
+Passenger Ship,01/01/2022,Yolcu Gemisi (Passenger Ship),14
+Refrigerated Cargo Ship,01/01/2022,Frigorifik Gemi (Refrigerated Cargo Carrier),4
+RoRo,01/01/2022,Ro-ro Gemi (Roll on Roll of Vessel),20
+"Chemical Tanker, Other Tankers",01/01/2022,"Türü Belirtilmemiş Tanker (Other Tanker, TTA)",438
+"Chemical Tanker, Other Tankers",01/01/2022,"Kimyasal Yük Taşıyan Tanker (Chemical Tanker, TCH)",270
+LPG,01/01/2022,Gaz Tankeri (Liquefied Petroleum Gas LPG),47
+Exclude,01/01/2022,Römorkör (Tug),17
+Vehicle Carrier,01/01/2022,Araç Taşıyan Gemi (Vehicle Carrier),3
+Exclude,01/01/2022,Diğer (Other),19
+Bulk Carrier,01/02/2022,Barç (Barge / Barge Carrier),0
+Bulk Carrier,01/02/2022,Dökme Yük Gemisi (Bulk Carrier),761
+Cement Carrier,01/02/2022,Çimento Gemisi (Cement Carrier) ,4
+Container Ship,01/02/2022,Konteyner Gemisi (Container Ship),227
+Exclude,01/02/2022,Feribot (Ferry),0
+General Cargo Ship,01/02/2022,Genel Kargo Gemisi (General Cargo Ship),1251
+Livestock Carrier,01/02/2022,Canlı Hayvan Taşıyan Gemi (Livestock Carrier),46
+Exclude,01/02/2022,Savaş Gemisi (Naval),12
+Passenger Ship,01/02/2022,Yolcu Gemisi (Passenger Ship),15
+Refrigerated Cargo Ship,01/02/2022,Frigorifik Gemi (Refrigerated Cargo Carrier),2
+RoRo,01/02/2022,Ro-ro Gemi (Roll on Roll of Vessel),14
+"Chemical Tanker, Other Tankers",01/02/2022,"Türü Belirtilmemiş Tanker (Other Tanker, TTA)",428
+"Chemical Tanker, Other Tankers",01/02/2022,"Kimyasal Yük Taşıyan Tanker (Chemical Tanker, TCH)",252
+LPG,01/02/2022,Gaz Tankeri (Liquefied Petroleum Gas LPG),42
+Exclude,01/02/2022,Römorkör (Tug),14
+Vehicle Carrier,01/02/2022,Araç Taşıyan Gemi (Vehicle Carrier),6
+Exclude,01/02/2022,Diğer (Other),20
+Bulk Carrier,01/03/2022,Barç (Barge / Barge Carrier),2
+Bulk Carrier,01/03/2022,Dökme Yük Gemisi (Bulk Carrier),489
+Cement Carrier,01/03/2022,Çimento Gemisi (Cement Carrier) ,1
+Container Ship,01/03/2022,Konteyner Gemisi (Container Ship),183
+Exclude,01/03/2022,Feribot (Ferry),0
+General Cargo Ship,01/03/2022,Genel Kargo Gemisi (General Cargo Ship),1122
+Livestock Carrier,01/03/2022,Canlı Hayvan Taşıyan Gemi (Livestock Carrier),35
+Exclude,01/03/2022,Savaş Gemisi (Naval),1
+Passenger Ship,01/03/2022,Yolcu Gemisi (Passenger Ship),3
+Refrigerated Cargo Ship,01/03/2022,Frigorifik Gemi (Refrigerated Cargo Carrier),0
+RoRo,01/03/2022,Ro-ro Gemi (Roll on Roll of Vessel),15
+"Chemical Tanker, Other Tankers",01/03/2022,"Türü Belirtilmemiş Tanker (Other Tanker, TTA)",412
+"Chemical Tanker, Other Tankers",01/03/2022,"Kimyasal Yük Taşıyan Tanker (Chemical Tanker, TCH)",201
+LPG,01/03/2022,Gaz Tankeri (Liquefied Petroleum Gas LPG),29
+Exclude,01/03/2022,Römorkör (Tug),22
+Vehicle Carrier,01/03/2022,Araç Taşıyan Gemi (Vehicle Carrier),9
+Exclude,01/03/2022,Diğer (Other),26
