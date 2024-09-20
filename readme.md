@@ -9,8 +9,8 @@ and [Bosporus Strait](notebooks/Bosporus%20Strait.ipynb) during periods of disru
 For Suez Canal, [re-routed 
 vessels](Suez%20Canal%20Reroutes.ipynb) during the March 2021 blockage are also identified. 
 
-To validate the algorithm, [transit counts for Suez Canal are compared 
-with official data from Suez Canal Authority](notebooks/Suez%20Canal%20Benchmarking.ipynb). 
+To validate the algorithm, transit counts per vessel category for each of the passageways were compared with  
+with official data/ground truth data depending on availability.  
 
 The notebooks are run in the [UN Global Platform](https://www.officialstatistics.org/). 
 Connect to the platform and use kernel `pyspark3.5 ais2.9`.
