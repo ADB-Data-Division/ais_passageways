@@ -1,0 +1,31 @@
+StatCode5,ShiptypeLevel2,ShiptypeLevel5,Vessel Type
+A11A2TN,Tankers,LNG Tanker,LNG
+A11B2TG,Tankers,LPG Tanker,LPG
+A11B2TH,Tankers,LPG/Chemical Tanker,LPG
+A12A2TC,Tankers,Chemical Tanker,Product Tanker
+A12B2TR,Tankers,Chemical/Products Tanker,Product Tanker
+A13A2TS,Tankers,Shuttle Tanker,Crude Oil Tanker
+A13A2TV,Tankers,Crude Oil Tanker,Crude Oil Tanker
+A13A2TW,Tankers,Crude/Oil Products Tanker,Crude Oil Tanker
+A13B2TP,Tankers,Products Tanker,Product Tanker
+A13C2LA,Tankers,Asphalt/Bitumen Tanker,Product Tanker
+A21A2BC,Bulk Carriers,Bulk Carrier,Bulk Carrier
+A22A2BB,Bulk Carriers,Bulk/Oil Carrier (OBO),Bulk Carrier
+A22B2BQ,Bulk Carriers,Bulk/Oil/Chemical Carrier (CLEANBU),Bulk Carrier
+A24A2BT,Bulk Carriers,Cement Carrier,Bulk Carrier
+A24B2BW,Bulk Carriers,Wood Chips Carrier,Bulk Carrier
+A24D2BA,Bulk Carriers,Aggregates Carrier,Bulk Carrier
+A31A2GA,Dry Cargo/Passenger,General Cargo Ship (with Ro-Ro facility),Exclude
+A31A2GE,Dry Cargo/Passenger,"General Cargo Ship, Self-discharging",Exclude
+A31A2GO,Dry Cargo/Passenger,General Cargo Ship (Open Hatch),Exclude
+A31A2GX,Dry Cargo/Passenger,General Cargo Ship,Exclude
+A31C2GD,Dry Cargo/Passenger,Deck Cargo Ship,Exclude
+A33A2CC,Dry Cargo/Passenger,Container Ship (Fully Cellular),Containership
+A34A2GR,Dry Cargo/Passenger,Refrigerated Cargo Ship,Exclude
+A35A2RR,Dry Cargo/Passenger,Ro-Ro Cargo Ship,Exclude
+A35B2RV,Dry Cargo/Passenger,Vehicles Carrier,Exclude
+A36A2PR,Dry Cargo/Passenger,Passenger/Ro-Ro Ship (Vehicles),Exclude
+A37A2PC,Dry Cargo/Passenger,Passenger/Cruise,Exclude
+A38A2GL,Dry Cargo/Passenger,Livestock Carrier,Exclude
+A38C2GH,Dry Cargo/Passenger,Heavy Load Carrier,Exclude
+A38C3GH,Dry Cargo/Passenger,"Heavy Load Carrier, semi submersible",Exclude
